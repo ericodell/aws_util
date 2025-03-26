@@ -1,0 +1,31 @@
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "aws_util"
+version = "0.0.1"
+description = "A collection of AWS utility functions."
+requires-python = ">=3.7"
+dependencies = ["boto3"]
+authors = [
+    { name = "Your Name", email = "your.email@example.com" }, # Replace with your info
+]
+license = { text = "MIT" } # changed to a string.
+classifiers = [
+    "Development Status :: 3 - Alpha", # Adjust as needed
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.7",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+]
+keywords = ["aws", "ecs", "boto3"]
+urls = { "Homepage" = "https://github.com/yourusername/aws_util" } # Replace with your repo
+
+[project.scripts]
+ecs_connect = "aws_util.ecs_utils:main"
