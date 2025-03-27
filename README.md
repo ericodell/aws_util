@@ -8,10 +8,17 @@ A collection of AWS utility functions for Python
 working with AWS  Services. It currently includes functionality to execute
 commands within running containers.
 
+
 ## Installation
 
+**TL;DR: Run `source activate.sh` to set up your development environment. This creates an isolated virtual environment, installs `aws_util` and its dependencies, and updates `pip`. After installation, you can run `ecs_connect -p <your_profile>` to connect to an ECS container.**
+
+**Virtual Environment Isolation:** The installation process creates an isolated virtual environment (`venv`). This environment ensures that `aws_util` and its dependencies are installed separately from your system's Python packages, preventing conflicts and keeping your system clean.
+
+local installation in a virtual environment can be done using:
+
 ```bash
-source activate.sh 
+source venv.sh 
 ```
 
 * Now you can use the `ecs_connect` command to run your script.
