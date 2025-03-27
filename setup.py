@@ -4,7 +4,10 @@ setup(
     name='aws_util',
     version='0.0.1',
     packages=find_packages(),
-    install_requires=['boto3'],
+    install_requires=[
+        'boto3',
+        'sphinx',
+    ],
     python_requires='>=3.7',
     entry_points={
         'console_scripts': [
